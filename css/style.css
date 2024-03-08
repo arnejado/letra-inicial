@@ -37,7 +37,7 @@
         .div4 { grid-area: 2 / 3 / 3 / 5; }
         .div5 { grid-area: 2 / 5 / 3 / 7; }
 
-.boton {
+.boton img {
   width: 200px;
   height: 200px;
 }
