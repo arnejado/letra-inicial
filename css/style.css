@@ -38,7 +38,7 @@
         .boton5 { grid-area: 2 / 5 / 3 / 7; }
 
 .boton img {
-  max-width: 200px;
+  max-width: 100%;
   height: auto;
 }
 
