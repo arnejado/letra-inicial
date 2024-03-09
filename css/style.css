@@ -1,6 +1,7 @@
 body {
+  display: flex;
   background-color: lightgray;
-  align-items: center;
+  justify-content: center;
 }
 
 .parent {
