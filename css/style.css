@@ -1,3 +1,8 @@
+body {
+  background-color: lightgray;
+  align-items: center;
+}
+
 .parent {
     display: grid;
     height:  90vh;
@@ -8,6 +13,8 @@
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     align-items: center;
+    min-width: 400px;
+    max-width: 760px;
 }
 
     .letra {
@@ -49,7 +56,7 @@
 .boton {
     max-width: 250px;
     display: inline-block;
-    padding: 20px 20px;
+    padding: 10px;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
