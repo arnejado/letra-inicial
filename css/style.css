@@ -8,7 +8,7 @@ body {
 
 .parent {
     display: grid;
-    width: 99vw;
+    width: 90vw;
     height:  90vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr 3fr);
