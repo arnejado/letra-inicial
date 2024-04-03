@@ -1,11 +1,13 @@
 var dibujos =  document.getElementById("dibujos");
+var divLetraPantalla = document.getElementById("letra");
 var aleatorioMax = bd.length;
 var aleatorioMin = 0;
 const seleccionAnimales = [];
-
+var letraPantalla = "" 
+console.log(divLetraPantalla)
 
 crearArraySeleccion (bd, seleccionAnimales);
-
+seleccionLetra (letraPantalla);
 cargarBotones (); 
 
 
@@ -21,10 +23,16 @@ function crearArraySeleccion (bd, seleccionAnimales) {
             seleccionAnimales.push(animalAleatorio);
             idsSeleccionados.add(animalAleatorio.id);
         }
-    }
+    }    
+
+}
+
+function seleccionLetra (letraPantalla) {
+    const indiceLetra = Math.floor(Math.random() * 5);
+    letraPantalla = seleccionAnimales[indiceLetra].inicial;
+    console.log(letraPantalla)
+    divLetraPantalla.textContent = letraPantalla;
     
-    console.log(seleccionAnimales);
-    console.log(seleccionAnimales.length);
 }
 
 function cargarBotones () {

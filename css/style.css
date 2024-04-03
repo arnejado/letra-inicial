@@ -23,8 +23,8 @@ body {
 
   .letra {
     grid-area: 1 / 1 / 2 / 2;
-    background-color: bisque;
     font-weight: bold;
+    font-size: 7rem;
 
   }
 
