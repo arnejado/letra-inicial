@@ -69,7 +69,7 @@ body {
 .boton img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 /* para los botones de los dibujos */
@@ -84,7 +84,7 @@ body {
     text-align: center;
     text-decoration: none;
     border: 3px solid #555;
-    border-radius: 15px;
+    border-radius: 35px;
     cursor: pointer;
   }
   
