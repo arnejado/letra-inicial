@@ -68,6 +68,9 @@ function cargarBotones () {
             if (letraPantalla === letraSeleccionada) {
                 console.log("letra correcta");
                 boton.classList.add("acierto"); // Agrega la clase "acierto"
+                setTimeout(() => {
+                    location.reload(); // Recarga la página
+                }, 2000);
             } else {
                 console.log("letra incorrecta");
                 boton.classList.add("fallo"); // Agrega la clase "fallo"
