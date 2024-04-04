@@ -5,7 +5,7 @@ var aleatorioMin = 0;
 const seleccionAnimales = [];
 var letraPantalla = ""
 var letraSeleccionada = "";
-var palabraReproducir = "";
+var fraseReproducirReproducir = "";
 const botones = document.querySelectorAll(".boton");
 
 
@@ -39,8 +39,9 @@ function seleccionLetra () {
     const indiceLetra = Math.floor(Math.random() * 5);
     letraPantalla = seleccionAnimales[indiceLetra].inicial;
     console.log(letraPantalla)
-    palabraReproducir = seleccionAnimales[indiceLetra].animal;
-    console.log(palabraReproducir);
+    fraseReproducir = `${seleccionAnimales[indiceLetra].inicial} de ${seleccionAnimales[indiceLetra].animal}`;
+    
+    console.log(fraseReproducir);
     divLetraPantalla.textContent = letraPantalla;
     
 }
@@ -72,13 +73,13 @@ function cargarBotones () {
                 console.log("letra correcta");
                 boton.classList.add("acierto"); // Agrega la clase "acierto"
 
-                //lo de decir al animal
-                const utterance = new SpeechSynthesisUtterance(palabraReproducir);
-                    utterance.voice = speechSynthesis.getVoices()[2]; // Elige una voz (puedes obtener la lista de voces disponibles)
-                    utterance.rate = 1.0; // Velocidad normal
-                    utterance.pitch = 1.0; // Tono normal
+                // lo de decir al animal
+                // const utterance = new SpeechSynthesisUtterance(fraseReproducir);
+                //     utterance.voice = speechSynthesis.getVoices()[2]; // Elige una voz (puedes obtener la lista de voces disponibles)
+                //     utterance.rate = 1.0; // Velocidad normal
+                //     utterance.pitch = 1.0; // Tono normal
 
-                    window.speechSynthesis.speak(utterance); //reproduce
+                //     window.speechSynthesis.speak(utterance); //reproduce
 
 
                 setTimeout(() => {
