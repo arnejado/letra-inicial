@@ -88,6 +88,16 @@ body {
     cursor: pointer;
   }
   
+.acierto {
+  background-color: green;
+  border: 3px solid green;
+}
+
+.fallo {
+  background-color: red;
+  border: 3px solid red;
+}
+
   /* Estilo para el fondo del botón */
   .boton-primary {
     background-color: #3498db; /* Azul */
