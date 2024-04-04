@@ -10,7 +10,7 @@
 // ]
 
 const bd = [
-   { id: 1, inicial: "A", animal: "alpaca", url: "/imagenes/alpaca.png" },
+   { id: 1, inicial: "Z", animal: "zorro", url: "/imagenes/zorro.png" },
    { id: 2, inicial: "A", animal: "antilope", url: "/imagenes/antilope.png" },
    { id: 3, inicial: "A", animal: "ardilla",	url: "/imagenes/ardilla.png" },
    { id: 4, inicial: "B", animal: "bisonte",	url: "/imagenes/bisonte.png" },
@@ -40,5 +40,4 @@ const bd = [
    { id: 28, inicial: "R", animal: "rinoceronte", url: "/imagenes/rinoceronte.png" },
    { id: 29, inicial: "T", animal: "tigre", url: "/imagenes/tigre.png" },
    { id: 30, inicial: "V", animal: "vaca", url: "/imagenes/vaca.png" },
-   { id: 31, inicial: "Z", animal: "zorro", url: "/imagenes/zorro.png" },
 ]
