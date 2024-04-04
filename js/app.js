@@ -5,6 +5,7 @@ var aleatorioMin = 0;
 const seleccionAnimales = [];
 var letraPantalla = ""
 var letraSeleccionada = "";
+var palabraReproducir = "";
 const botones = document.querySelectorAll(".boton");
 
 
@@ -26,9 +27,9 @@ function crearArraySeleccion (bd, seleccionAnimales) {
         const indiceAleatorio = Math.floor(Math.random() * bd.length);
         const animalAleatorio = bd[indiceAleatorio];
         
-        if (!idsSeleccionados.has(animalAleatorio.id)) {
+        if (!idsSeleccionados.has(animalAleatorio.inicial)) {
             seleccionAnimales.push(animalAleatorio);
-            idsSeleccionados.add(animalAleatorio.id);
+            idsSeleccionados.add(animalAleatorio.inicial);
         }
     }    
     
@@ -38,6 +39,8 @@ function seleccionLetra () {
     const indiceLetra = Math.floor(Math.random() * 5);
     letraPantalla = seleccionAnimales[indiceLetra].inicial;
     console.log(letraPantalla)
+    palabraReproducir = seleccionAnimales[indiceLetra].animal;
+    console.log(palabraReproducir);
     divLetraPantalla.textContent = letraPantalla;
     
 }
@@ -68,6 +71,16 @@ function cargarBotones () {
             if (letraPantalla === letraSeleccionada) {
                 console.log("letra correcta");
                 boton.classList.add("acierto"); // Agrega la clase "acierto"
+
+                //lo de decir al animal
+                const utterance = new SpeechSynthesisUtterance(palabraReproducir);
+                    utterance.voice = speechSynthesis.getVoices()[2]; // Elige una voz (puedes obtener la lista de voces disponibles)
+                    utterance.rate = 1.0; // Velocidad normal
+                    utterance.pitch = 1.0; // Tono normal
+
+                    window.speechSynthesis.speak(utterance); //reproduce
+
+
                 setTimeout(() => {
                     location.reload(); // Recarga la página
                 }, 2000);
