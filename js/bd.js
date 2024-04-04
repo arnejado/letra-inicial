@@ -1,10 +1,10 @@
 const bd = [
-    { id: 1, inicial: "O", url: "/imagenes/001.jpeg"},
-    { id: 2, inicial: "V", url: "/imagenes/002.jpeg"},
-    { id: 3, inicial: "A", url: "/imagenes/003.jpeg"},
-    { id: 4, inicial: "P", url: "/imagenes/004.jpeg"},
-    { id: 5, inicial: "L", url: "/imagenes/005.jpeg"},
-    { id: 6, inicial: "Z", url: "/imagenes/006.jpeg"},
-    { id: 7, inicial: "F", url: "/imagenes/007.jpeg"},
-    { id: 8, inicial: "D", url: "/imagenes/008.jpeg"},
+    { id: 1, inicial: "O", animal:"oveja", url: "/imagenes/001.jpeg"},
+    { id: 2, inicial: "A", animal:"aveja", url: "/imagenes/002.jpeg"},
+    { id: 3, inicial: "V", animal:"vaca", url: "/imagenes/003.jpeg"},
+    { id: 4, inicial: "P", animal:"perro", url: "/imagenes/004.jpeg"},
+    { id: 5, inicial: "L", animal:"león", url: "/imagenes/005.jpeg"},
+    { id: 6, inicial: "Z", animal:"zorro", url: "/imagenes/006.jpeg"},
+    { id: 7, inicial: "F", animal:"foca", url: "/imagenes/007.jpeg"},
+    { id: 8, inicial: "D", animal:"desfín", url: "/imagenes/008.jpeg"},
 ]
